@@ -7,5 +7,14 @@
 	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_161/bin/wsc/target/force-wsc-42.0.0-uber.jar"/>
 	<classpathentry kind="lib" path="jgoodies-forms-1.8.0.jar" sourcepath="jgoodies-forms-1.8.0-sources.jar"/>
 	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915.zip"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/poi-bin-3.17-20170915/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="E:/Softwares/jacob-1.18/jacob-1.18/jacob.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

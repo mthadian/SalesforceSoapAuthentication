@@ -1,8 +1,11 @@
 package testSoap;
 
 
-import com.sforce.soap.enterprise.Connector;
+import java.util.Scanner;
 
+import org.apache.poi.ss.usermodel.Workbook;
+
+import com.sforce.soap.enterprise.Connector;
 import com.sforce.soap.enterprise.EnterpriseConnection;
 import com.sforce.soap.enterprise.QueryResult;
 import com.sforce.soap.enterprise.sobject.Account;
@@ -10,10 +13,8 @@ import com.sforce.soap.enterprise.sobject.Contact;
 import com.sforce.soap.enterprise.sobject.SObject;
 import com.sforce.ws.ConnectionException;
 import com.sforce.ws.ConnectorConfig;
+ 
 
-
-
-import java.util.Scanner;
 
 
 
@@ -38,7 +39,7 @@ public class SF
 		
 		System.out.println("PASSWORD: ");
 		String PASSWORD=scan.nextLine();
-		scan.close();
+		
 
 		 
 		
@@ -51,15 +52,37 @@ public class SF
 		try 
 		{
 			connection = Connector.newConnection(config);
-			// display some current settings
-			System.out.println("Auth EndPoint:"+config.getAuthEndpoint());
+			// display some current setting
 			System.out.println("Service EndPoint:"+config.getServiceEndpoint());
 			System.out.println("Username: "+config.getUsername());
-		    
 
-			System.out.println("SessionId: "+config.getSessionId());
-			//queryContacts();
-			queryAccounts();
+		
+			
+			System.out.println("CHOOSE A METHOD");
+			System.out.println("1: Get All Accounts");
+			System.out.println("2: Get All Contacts");
+			
+			
+			int choice=scan.nextInt();
+			switch(choice)
+			{
+			
+			case 1:
+			
+				queryAccounts();
+				break;
+			
+			case 2:
+			
+				queryContacts();
+				break;
+			
+			default:
+			
+				System.out.println("INVALID OPTION!!");
+			}		
+			
+			
 		}
 		catch (ConnectionException e1)
 			{
@@ -68,7 +91,13 @@ public class SF
 		
 			
 			}
+		scan.close();
 		
+	}
+	
+	//read Excel
+	public static void readExcel()
+	{
 		
 	}
 	//get All Accounts
@@ -181,6 +210,7 @@ public class SF
 		   }
 		}
 	
+
 
 
 }
